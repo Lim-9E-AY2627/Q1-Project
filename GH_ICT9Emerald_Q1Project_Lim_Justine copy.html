@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q1 Project</title>
+
+  <style>
+    /* Global Styles */
+    body {
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    /* Header Banner */
+    .name-area {
+      background: #d4e3fc; /* Light pastel blue/lavender */
+      padding: 40px 20px;
+      text-align: center;
+      
+      
+    }
+    .name-area h1 {
+      margin: 0;
+      color: #1a2a5a;
+      font-size: 2.2rem;
+    }
+    .name-area p {
+      margin: 10px 0 0 0;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #ffffff; /* White clean background for contrast */
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Styled Section Headers */
+    .section-title {
+      background: linear-gradient(90deg, #8a4fff, #6e38c6);
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      margin: 25px 0 15px 0;
+      text-align: center;
+    }
+
+    .about-text {
+      padding: 10px;
+      text-align: center;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Work Blocks Layout */
+    .work-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 30px;
+      align-items: center;
+      text-align: left;
+    }
+
+    .work-image-container {
+      text-align: center;
+    }
+
+    .work-image {
+      max-width: 100%;
+      height: auto;
+      border: 2px dashed #6e38c6;
+      border-radius: 8px;
+      padding: 5px;
+      background: #fff;
+    }
+
+    .work-caption {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #666;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .work-links ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 10px;
+      line-height: 2;
+    }
+
+    .work-links a {
+      color: #6e38c6;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Form Styles */
+    .form-card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 25px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    .checkbox-group, .radio-group {
+      margin: 8px 0;
+    }
+
+    .checkbox-group label, .radio-group label {
+      display: inline-block;
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      background: #6e38c6;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button[type="submit"]:hover {
+      background: #5223a3;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #ddd;
+      margin: 30px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #6e38c6;
+      color: white;
+      padding: 15px;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 700px) {
+      .work-block {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+    .Profile-Picture{
+ width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="name-area">
+    <img class="Profile-Picture" src="ProfilePic.png" alt="Profile-Picture" />
+    <h1>Justine Lim</h1>
+    <p>Aspiring Web Developer</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- About Me -->
+    <div class="section-title">About Me</div>
+    <div class="about-text">
+      Hi! i am <b>Justine Lim</b>, a student learning how to do simple html codes.
+    </div>
+
+    <!-- My Works Section -->
+    <div class="section-title">My Works</div>
+
+    <!-- Work 1 -->
+    <div class="work-block">
+      <div class="work-image-container">
+        <img class="work-image" src="My Favorite Artist.png" alt="Work 1 preview" />
+        <div class="work-caption">My Favorite Spotify Artist</div>
+      </div>
+      <div class="work-links">
+        <ul>
+          <li>✓ HTML CSS Projects</li>
+          <li>✓ Spotify Artist</li>
+          <li>✓ List, Links and Images</li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">View GitHub Repository</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Work 2 -->
+    <div class="work-block">
+      <div class="work-image-container">
+        <img class="work-image" src="Movie Review.png" alt="Work 2 preview" />
+        <div class="work-caption">Rate a Movie Form</div>
+      </div>
+      <div class="work-links">
+        <ul>
+          <li>✓ HTML CSS Projects</li>
+          <li>✓ HTML Forms</li>
+          <li>✓ Movie Recommendations</li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">View GitHub Repository</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Contact -->
+    <div class="section-title">Contact Me</div>
+    
+    <div class="form-card">
+      <form action="#" method="post">
+        
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label>How did you find me?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="source" value="facebook" /> Facebook</label>
+            <label><input type="radio" name="source" value="google" /> Google</label>
+            <label><input type="radio" name="source" value="friends" /> Friends</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Interested in:</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="web" /> Web Design</label>
+            <label><input type="checkbox" name="interest" value="graphic" /> Graphic Design</label>
+            <label><input type="checkbox" name="interest" value="robotics" /> Robotics</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Rate my Portfolio</label>
+          <select id="rating" name="rating">
+            <option value="">-- Select Rating --</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Average</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">Any Feedback?</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+    <footer>
+        <p>© 2026 | Justine Lim | 9-Emerald</p>
+    </footer>
+
+</body>
+</html>
